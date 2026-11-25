@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Elgato Stream Deck Original V2 and MK.2 (vendor 0x0fd9) -->
+    <usb-device vendor-id="4057" product-id="109" />
+    <usb-device vendor-id="4057" product-id="128" />
+</resources>

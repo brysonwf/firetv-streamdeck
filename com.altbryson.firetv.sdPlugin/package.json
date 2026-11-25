@@ -1,0 +1,9 @@
+{
+  "name": "com.altbryson.firetv",
+  "private": true,
+  "description": "Fire TV Remote for Stream Deck",
+  "main": "bin/plugin.js",
+  "dependencies": {
+    "ws": "8.18.0"
+  }
+}

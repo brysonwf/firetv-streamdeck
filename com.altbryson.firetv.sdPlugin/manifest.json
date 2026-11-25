@@ -1,0 +1,36 @@
+{
+  "Name": "Fire TV Remote",
+  "Version": "1.0.0.0",
+  "Author": "altbryson",
+  "Description": "Turns Stream Deck keys into a Fire TV remote (over ADB on the home network): arrows, select, back, home, play/pause, volume, sleep/wake, and one-press app launching.",
+  "URL": "https://altbryson.com",
+  "Category": "Fire TV",
+  "CategoryIcon": "imgs/category",
+  "Icon": "imgs/plugin",
+  "SDKVersion": 2,
+  "CodePath": "bin/plugin.js",
+  "Nodejs": { "Version": "20" },
+  "OS": [{ "Platform": "windows", "MinimumVersion": "10" }],
+  "Software": { "MinimumVersion": "6.5" },
+  "UUID": "com.altbryson.firetv",
+  "Actions": [
+    {
+      "UUID": "com.altbryson.firetv.key",
+      "Name": "Remote key",
+      "Icon": "imgs/action-key",
+      "Tooltip": "A Fire TV remote button: arrows, select, back, home, play/pause, volume, sleep/wake...",
+      "PropertyInspectorPath": "pi/key.html",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/key", "ShowTitle": false }]
+    },
+    {
+      "UUID": "com.altbryson.firetv.app",
+      "Name": "Open app",
+      "Icon": "imgs/action-app",
+      "Tooltip": "Open an app on the Fire TV (Peacock, Paramount+, Prime Video, YouTube TV...)",
+      "PropertyInspectorPath": "pi/app.html",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/app", "ShowTitle": false }]
+    }
+  ]
+}

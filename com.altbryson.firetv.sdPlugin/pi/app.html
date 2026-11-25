@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="pi.css"></head>
+<body data-kind="app">
+  <div class="row"><label for="device">Fire TV</label><select id="device"></select></div>
+  <div class="row" id="host-row" hidden><label for="host">IP address</label><input id="host" placeholder="192.168.1.50"></div>
+  <div class="row"><label for="app">App</label><select id="app"></select></div>
+  <div id="pkg-rows" hidden>
+    <div class="row"><label for="pkg">Package</label><input id="pkg" placeholder="com.example.app"></div>
+    <div class="row"><label for="label">Key label</label><input id="label" placeholder="My app"></div>
+  </div>
+  <div class="row"><label></label><button id="test">Test it</button></div>
+  <script src="../bin/catalog.js"></script>
+  <script src="pi.js"></script>
+</body></html>
